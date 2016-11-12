@@ -1,0 +1,16 @@
+Inicializacion
+Declara a,Entera,
+Read a,Entera,
+Declara b,Entera,
+Read b,Entera,
+Declara cc,Entera,
+Declara Temp&1,Entera,
+Resta b,2,Temp&1
+Declara Temp&2,Entera,
+Suma a,Temp&1,Temp&2
+Almacena Temp&2,cc,
+Write cc,Entera,
+Declara Temp&3,Entera,
+Suma a,4,Temp&3
+Write Temp&3,Entera,
+Detiene
