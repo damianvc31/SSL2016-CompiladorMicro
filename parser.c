@@ -51,7 +51,7 @@ void Sentencia(void)
             Match(PUNTOYCOMA);
             break;
         case LEER :
-            /* <sentencia> -> LEER ( <listaIdentificadores> ) */
+            /* <sentencia> -> LEER ( <listaIdentificadores> ); */
             Match(LEER);
             Match(PARENIZQUIERDO);
             ListaIdentificadores();
@@ -59,7 +59,7 @@ void Sentencia(void)
             Match(PUNTOYCOMA);
             break;
         case ESCRIBIR :
-            /* <sentencia> -> ESCRIBIR ( <listaExpresiones> ) */
+            /* <sentencia> -> ESCRIBIR ( <listaExpresiones> ); */
             Match(ESCRIBIR);
             Match(PARENIZQUIERDO);
             ListaExpresiones();
@@ -67,7 +67,7 @@ void Sentencia(void)
             Match(PUNTOYCOMA);
             break;
         default :
-			ErrorSintactico(tok);
+	    ErrorSintactico();
             break;
     }
 }
@@ -151,7 +151,7 @@ void Primaria(REG_EXPRESION * resultado)
             Match(PARENDERECHO);
             break;
         default :
-            ErrorSintactico(tok);
+            ErrorSintactico();
             break;
     }
 }
